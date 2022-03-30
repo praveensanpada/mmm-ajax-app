@@ -7,16 +7,18 @@
         $(document).ready(function () {
             var name = "Praveen"
             $.ajax({
-                url: 'https://jsonplaceholder.typicode.com/todos/1',
+                url: 'https://praveensanpada.github.io/mmm-ajax-app/api.json',
                 type: 'GET',
                 dataType: 'json',
                 success: function (data, textStatus, xhr) {
                     console.log(data);
-                    this.name = data.title
+//                     this.name = data.title
 
-                    console.log(name)
-                    $("#test2").html(data.title);
+//                     console.log(name)
+                    $("#test2").html(data.headLine);
                     $("#myyy").html(data.title);
+                    $("#myp").html(data.message);
+                    
 
 
                 },
@@ -61,8 +63,8 @@
     </div>
 
     <div  style="width: 80%; color: aliceblue; text-align: center; margin: auto; font-size: 30px;">
-        <h5>
-            An HTML marquee is a scrolling piece of text displayed either horizontally across or vertically down your webpage depending on the settings. This is created by using HTML <marquees> tag.
+        <h5 id="myp">
+<!--             An HTML marquee is a scrolling piece of text displayed either horizontally across or vertically down your webpage depending on the settings. This is created by using HTML <marquees> tag. -->
         </h5>
     </div>
     <hr/ width="80%">
